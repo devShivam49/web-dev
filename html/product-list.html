@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - Auction Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Available Products for Auction</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="orders.html">Orders</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <section id="product-list">
+        <h2>Product List</h2>
+        <div class="product-grid">
+            <!-- Product items -->
+            <div class="product" onclick="showBidOption('Product 1')">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product Name 1</h3>
+                <div class="bid-option">
+                    <button onclick="placeBid('Product 1')">Bid</button>
+                    <button onclick="placeOrder('Product 1')">Pay</button>
+                </div>
+            </div>
+
+            <div class="product" onclick="showBidOption('Product 2')">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product Name 2</h3>
+                <div class="bid-option">
+                    <button onclick="placeBid('Product 2')">Bid</button>
+                    <button onclick="placeOrder('Product 2')">Pay</button>
+                </div>
+            </div>
+
+            <!-- Repeat for 15–20 products -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
